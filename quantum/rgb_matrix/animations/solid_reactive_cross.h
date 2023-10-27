@@ -15,9 +15,11 @@ static HSV SOLID_REACTIVE_CROSS_math(HSV hsv, int16_t dx, int16_t dy, uint8_t di
     uint16_t effect = tick + dist;
     dx              = dx < 0 ? dx * -1 : dx;
     dy              = dy < 0 ? dy * -1 : dy;
+    // dx, dy are absolute value
     dx              = dx * 16 > 255 ? 255 : dx * 16;
     dy              = dy * 16 > 255 ? 255 : dy * 16;
     effect += dx > dy ? dy : dx;
+    // effect is basically negative hue, so the farther from the cross, the weaker
     if (effect > 255) effect = 255;
 #            ifdef RGB_MATRIX_SOLID_REACTIVE_GRADIENT_MODE
     hsv.h = scale16by8(g_rgb_timer, qadd8(rgb_matrix_config.speed, 8) >> 4);

@@ -4,3 +4,5 @@
 #include "effect_runner_sin_cos_i.h"
 #include "effect_runner_reactive.h"
 #include "effect_runner_reactive_splash.h"
+#include "effect_runner_wave.h"
+#include "effect_runner_bullet.h"

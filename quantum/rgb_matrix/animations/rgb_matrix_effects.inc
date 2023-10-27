@@ -1,6 +1,5 @@
 // Add your new core rgb matrix effect here, order determines enum order
 #include "solid_color_anim.h"
-#include "my_first_effect.h"
 #include "alpha_mods_anim.h"
 #include "gradient_up_down_anim.h"
 #include "gradient_left_right_anim.h"
@@ -39,3 +38,5 @@
 #include "solid_reactive_nexus.h"
 #include "splash_anim.h"
 #include "solid_splash_anim.h"
+#include "solid_reactive_multiwave.h"
+#include "solid_reactive_multibullet.h"
