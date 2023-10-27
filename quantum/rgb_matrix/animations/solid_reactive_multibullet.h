@@ -7,7 +7,8 @@ RGB_MATRIX_EFFECT(SOLID_REACTIVE_MULTIBULLET)
 #       ifdef RGB_MATRIX_CUSTOM_EFFECT_IMPLS
 
 static HSV SOLID_REACTIVE_MULTIBULLET_math (HSV hsv, int16_t x, uint16_t tick, bool off) {
-    x = x - 10;
+    dy < 0 ? dy * -1 : dy;
+    x = x + 30 + 2 * dy;
     uint16_t effect = tick > x ? (255 < 3 * (tick - x) ? 0 : 255 + 3 * (x - tick)) : 0;
     if (effect > 255) effect = 255;
     if (off) effect = 0;
