@@ -1,0 +1,8 @@
+//
+// Created by hypro on 10/27/2023.
+//
+
+#ifndef ANIMATIONS_MY_FIRST_EFFECT_H
+#define ANIMATIONS_MY_FIRST_EFFECT_H
+
+#endif //ANIMATIONS_MY_FIRST_EFFECT_H
